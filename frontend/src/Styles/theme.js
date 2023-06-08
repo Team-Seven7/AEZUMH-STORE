@@ -5,8 +5,8 @@ const MEDIA = {
 }
 
 const COLOR = {
-	main: '#37C3FF',
-	sub: '#1ECDFF',
+	main: '#FFA101',
+	sub: '#FAE6B1',
 	hover: '#00AEF8',
 	focus: '#85DAFF',
 	common: {
@@ -32,16 +32,10 @@ const FONT_SIZE = {
 	huge: '4.8rem',
 }
 
-// const FONT_WEIGHT = {
-// 	light: 'TTTtangsbudaejjigaeB_bold',
-// 	regular: 'TTTtangsbudaejjigaeB_bold',
-// 	bold: 'TTTtangsbudaejjigaeB_bold',
-// }
-
 const FONT_WEIGHT = {
-	light: '300',
-	regular: '500',
-	bold: '800',
+	light: 'Cafe24Ssurround',
+	regular: 'Cafe24Ssurround',
+	bold: 'Cafe24Ssurround',
 }
 
 const theme = {

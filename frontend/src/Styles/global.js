@@ -1,42 +1,42 @@
 import { createGlobalStyle } from 'styled-components'
+import theme from './theme'
 
 const GlobalStyles = createGlobalStyle`
-    /* @font-face {
-    font-family: 'TTTtangsbudaejjigaeB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+    @font-face {
+        font-family: 'LINESeed-Bd';
+        src: url('../assets/font/LINESeedKR-Bd.ttf');
+    }
 
     @font-face {
-    font-family: 'TTTtangsbudaejjigaeB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-} */
+        font-family: 'LINESeed-Rg';
+        src: url('../assets/font/LINESeedKR-Rg.ttf');
+    }
 
-@font-face {
-    font-family: 'TTTtangsbudaejjigaeB_bold';
-    src: url('Assets/Font/TTTtangsbudaejjigaeB.woff2');
-    font-weight: 500;
-    font-style: normal;
-}
+    @font-face {
+        font-family: 'LINESeed-Th';
+        src: url('../assets/font/LINESeedKR-Th.ttf');
+    }
 
     * {
         margin:0;
         padding:0;
         box-sizing: border-box;
+
         @font-face {
-    font-family: 'TTTtangsbudaejjigaeB_bold';
-    src: url('Assets/Font/TTTtangsbudaejjigaeB.woff2');
-}
-font-family: 'TTTtangsbudaejjigaeB_bold';
+		 font-family: 'Cafe24Ssurround';
+		src: url('/Assets/Font/Cafe24SsurroundAir-v1.1.ttf');
+	    }
     }
+    body{
+		font-family: 'Cafe24Ssurround';
+	}
 
     html {
         // Font : Line Seed (라인 시드)
         font-size: 62.5%;
-        font-family: 'TTTtangsbudaejjigaeB_bold';
+        font-family: ${({ theme }) => theme.FONT_WEIGHT.regular};
+
+        
 
         @media screen and (max-width:820px) {
             font-size:50%;
@@ -48,6 +48,7 @@ font-family: 'TTTtangsbudaejjigaeB_bold';
     }
 
     h1 {
+        // 로고
         font-size:${({ theme }) => theme.FONT_SIZE.big};
     }
 
@@ -89,7 +90,7 @@ font-family: 'TTTtangsbudaejjigaeB_bold';
 
     textarea {
         font-size:${({ theme }) => theme.FONT_SIZE.small};
-        font-family: 'TTTtangsbudaejjigaeB';
+        font-family: 'LINESeed-Rg';
     }
 
     p {

@@ -30,7 +30,7 @@ export const FlexAlignCSS = css`
 `
 
 export const WidthAutoCSS = css`
-	width: 95%;
+	width: 80%;
 	max-width: 119.4rem;
 	margin: 0 auto;
 `
